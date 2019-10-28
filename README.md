@@ -491,15 +491,15 @@ df[['primary_description', 'case']].groupby(
 
 To get a better understanding of the data we will now visualise it. The number of crimes per month, day and hour were calculated:
 
-![image-20181001162714277](./capstone_images/cases_month.jpg)
+![image-20181001162714277](./Coursera_Capstone/cases_month.jpg)
 
- ![image-20181001162714277](./capstone_images/cases_day.jpg)
+ ![image-20181001162714277](./Coursera_Capstone/cases_day.jpg)
 
-![image-20181001162714277](./capstone_images/cases_hour.jpg)
+![image-20181001162714277](./Coursera_Capstone/cases_hour.jpg)
 
 Looking at the top three crimes it is clearly visible that the occurances of theft rise gretly during daylight hours and particularly between the hours of 3:00 pm and 5:00 pm.
 
-![image-20181001162714277](./capstone_images/cases_hour_area.png)
+![image-20181001162714277](./Coursera_Capstone/cases_hour_area.png)
 
 
 Unsuprisingly there little obvious variation in the number of crimes committed per month other than an apparent drop-off in February. There is a small increase in crime reported at the weekend, Saturday and
@@ -507,19 +507,19 @@ Sunday, but nothing that couldbe considered significant. There is an expected fa
 
 Finally the crimes data for a single month, August, was super-imposed over a map of Chicago to visualise the distribution of that data:
 
-![image-20181001162714277](./capstone_images/markers.jpg)
+![image-20181001162714277](./Coursera_Capstone/markers.jpg)
 
 The higher frequency of the top two crimes can be easily seen. Red for Theft and Blue for Battery.
 
 Next the crimes were clustered:
 
-![image-20181001162714277](./capstone_images/clusters.jpg)
+![image-20181001162714277](./Coursera_Capstone/clusters.jpg)
 
 Several obvious clusters of crime locations were visible, particularly in the center of Chicago.
 
 Finally a heat map of the August crimes was created:
 
-![image-20181001162714277](./capstone_images/heatmap.jpg)
+![image-20181001162714277](./Coursera_Capstone/heatmap.jpg)
 
 This reinforces the cluster chart where it can clearly be seen that the center of Chicago and the area around Oak Park have a high crime rate occurrence. It will be interesting to see later if there is a high probability of crime in these areas if one of the top listed venues are located in these areas.
 
@@ -536,19 +536,19 @@ The first round of eploratory analysis was to examine the Top Venues and Restaur
 
 Unforfunately the only data attributes that could be analysed were the Latitude and Longitude attributes and their relationship to the venuse score. Top Venues was examined First.
 
-![image-20181001162714277](./capstone_images/topven_lat.png)
+![image-20181001162714277](./Coursera_Capstone/topven_lat.png)
 
 
 
-![image-20181001162714277](./capstone_images/topven_lon.png)
+![image-20181001162714277](./Coursera_Capstone/topven_lon.png)
 
 Although nothing obvious to would appear that the top venues are centered arounf the `-87.65` Longitude.
 
 the Restaurant data was examined next.
 
-![image-20181001162714277](./capstone_images/rest_lat.png)
+![image-20181001162714277](./Coursera_Capstone/rest_lat.png)
 
-![image-20181001162714277](./capstone_images/rest_lon.png)
+![image-20181001162714277](./Coursera_Capstone/rest_lon.png)
 
 Unsuprisingly the Restaurant data is also clustered arounf the  `-87.65` Longitude given that Restaurants with 500 meters of the top venues were selected.
 
@@ -577,13 +577,13 @@ A couple of example of the generated maps are shown below.
 
 The first map below is the top rated venue _Millennium Park_. The location of the attraction and the 10 top rated venues are clearly shown. The Top Venue is shown using a blue marker, the restaurants are shown using a red marker. Also shown is the heatmap of cimes within 750 meters over the course of the entire previous year. The hotter, redder, the heatmap the more crimes there are recorded. Some Restaurants, for example the two located at the top left of the map, appear to be in areas where crime is quite frequent. On the other hand others are in areas which are obviously not as crime ridden.
 
-![image-20181001162714277](./capstone_images/venue_01.jpg)
+![image-20181001162714277](./Coursera_Capstone/venue_01.jpg)
 
 
 
 The second map is for _The Music Box Theatre_. It is immediately apparent that the crime rate in this area of the city is much lower:
 
-![image-20181001162714277](./capstone_images/venue_02.jpg)
+![image-20181001162714277](./Coursera_Capstone/venue_02.jpg)
 
 Visiting this venue appears to be a much safer option with very little crime recored in the immediate vicinity. Also shown in the map above is the extra details provided about each Restaurant. The restaurant name, *Tango Sur*, it's food type _Argentinian_, and its average score are given.
 
@@ -680,7 +680,7 @@ K Nearest Neighbor(KNN) is a very simple, easy to understand, versatile and one 
 
 KNN Model was quick to execute and through the process of evaluation it was discovered the `K = 9` gave the best results
 
-![image-20181001162714277](./capstone_images/knn.png)
+![image-20181001162714277](./Coursera_Capstone/knn.png)
 
 KNN was not particularly fast taking approximately 10 minutes per model.
 
@@ -698,7 +698,7 @@ A decision tree is a decision support tool that uses a tree-like graph or model 
 
 The Decision Tree model was particularly fast taking only 10 seconds per model. This meant that it was easy to try multiple different parameters. A tree depth of 15 gave the best model performance:
 
-![image-20181001162714277](./capstone_images/dt.png)
+![image-20181001162714277](./Coursera_Capstone/dt.png)
 
 ### Logistic Regression & Naive Bayes
 
@@ -717,7 +717,7 @@ Estimator:  22   2018-10-08 15:47:19.027772
 Estimator:  23   2018-10-08 15:47:59.712219
 ```
 
-![image-20181001162714277](./capstone_images/rf.png)
+![image-20181001162714277](./Coursera_Capstone/rf.png)
 
 ### Best Model
 
@@ -788,7 +788,7 @@ This shows that the most predictive models are:
 
 After these the day and the month of the crime are weak predicters at ~1.1%. The other features, particulraly the hour the crime took place, are hardly predictive at all. A plot of this is shown below:
 
-![image-20181001162714277](./capstone_images/features.png)
+![image-20181001162714277](./Coursera_Capstone/features.png)
 
 ## Results & Prediction
 
@@ -885,15 +885,15 @@ The Distance Dataframe is recreated again but this time all crimes are included.
 
 The first two images are are of Millennium Park and of The Chicago Theatre. Both of these venues were identified as likely to be susceptible to crime.
 
-![image-20181001162714277](./capstone_images/final_01.jpg)
+![image-20181001162714277](./Coursera_Capstone/final_01.jpg)
 
-![image-20181001162714277](./capstone_images/final_02.jpg)
+![image-20181001162714277](./Coursera_Capstone/final_02.jpg)
 
 The next images are fromGrant Hill and Nature Boardwalk. Although both show signs of criminal activity, both have far less than Millennium Park and The Chicago Theatre.
 
-![image-20181001162714277](./capstone_images/final_03.jpg)
+![image-20181001162714277](./Coursera_Capstone/final_03.jpg)
 
-![image-20181001162714277](./capstone_images/final_04.jpg)
+![image-20181001162714277](./Coursera_Capstone/final_04.jpg)
 
 
 
