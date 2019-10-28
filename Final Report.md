@@ -72,7 +72,7 @@ As noted below in the Further Development Section, it is possible to attempt qui
 
 Although FourSquare provides a comprehensive API, one of the things that API does not easily support is a mechanism to directly extract the top N sites / venues in a given city. This data, however, is easily available directly from the FourSquare Website. To do this simply go to www.foursquare.com, enter the city of your choise and select Top Picks from _I'm Looking For_ selection field.
 
-Using BeautifulSoup and Requests the results of the Top Pick for Chicago was retrieved. A sample venue is shown below:
+Using BeautifulSoup and Requests the results of the Top Pick for Chicago was retrieved. A sample venue is shown belown--
 
 ```html
 <div class="venueDetails">
