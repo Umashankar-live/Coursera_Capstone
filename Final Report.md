@@ -539,7 +539,7 @@ Unforfunately the only data attributes that could be analysed were the Latitude 
 
 ![image-20181001162714277](./Coursera_Capstone/topven_lon.png)
 
-Although nothing obvious to would appear that the top venues are centered arounf the `-87.65` Longitude.
+Although nothing obvious to would appear that the top venues are centered around the `-87.65` Longitude.
 
 the Restaurant data was examined next.
 
